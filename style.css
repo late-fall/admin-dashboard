@@ -1,6 +1,17 @@
 :root{
     --article-color: #e5e7eb;
 }
+body{
+    height: 100vh;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 5fr;
+    font-family: 'Roboto', sans-serif;
+    max-height: 100vh;
+}
 h1,h2,h3,p{
     margin: 0;
     padding: 0;
@@ -15,11 +26,6 @@ section{
     background-color: var(--article-color);
     display: grid;
     grid-template-columns: 3fr 1fr;
-}
-body{
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 5fr;
-    font-family: 'Roboto', sans-serif;
 }
 ul{
     color: white;
@@ -50,7 +56,7 @@ h1{
 }
 .top{
     display: grid;
-    grid-template-columns: 1fr 15fr 1fr 1.2fr 2fr;
+    grid-template-columns: 1fr 15fr 0.8fr 1fr 2fr;
     font-size: 1.2rem;
     font-weight: 800;
     align-items: center;
